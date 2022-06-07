@@ -1,0 +1,56 @@
+.clients-container {
+  background-color: #f0f4f4;
+  width: 100%;
+  height: auto;
+}
+
+.clients-container > h1 {
+  font-size: 5vw;
+  font-family: "Teko";
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.clients-text-wrap {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.clients-logos-grid {
+  --gap: 50px;
+  --num-cols: 4;
+
+  display: grid;
+  /*
+    1fr means equal, so repeat 4 columns of equal width
+    */
+  width: 40%;
+  margin: 20px auto 0px;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-gap: var(--gap);
+  padding-bottom: 150px;
+}
+
+.clients-logos-grid > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 480px) {
+  img {
+    width: 100%;
+  }
+}
+
+/* Anything under 1024px // media query */
+@media screen and (max-width: 1024px) {
+  .clients-logos-grid {
+    --num-cols: 2;
+  }
+}

@@ -1,0 +1,83 @@
+.grid-container {
+  /* display: grid;
+  grid-template-columns: 700px auto;
+  grid-auto-rows: 600px; */
+  display: flex;
+}
+
+.question-wrap {
+  /* background-color: beige; */
+  width: 30%;
+  height: 600px;
+}
+
+.question-wrap > h1 {
+  font-size: 5vw;
+  font-family: "Teko";
+  text-align: center;
+  padding-top: 90px;
+}
+
+.form-wrap {
+  /* background-color: grey; */
+  width: 70%;
+  height: 600px;
+}
+
+form {
+  max-width: 550px;
+  width: 90%;
+  /* margin: 17vh auto 0 auto; */
+  justify-content: center;
+  padding: 50px;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-bottom: 1px solid black;
+}
+
+textarea::-webkit-scrollbar {
+  width: 2px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+input[type="submit"] {
+  margin-top: 35px;
+  width: 30%;
+  background: blue;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
+
+.error-border {
+  border-bottom: 1px solid red;
+}
+
+#success {
+  color: green;
+}
